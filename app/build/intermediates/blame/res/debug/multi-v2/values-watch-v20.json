@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/tuanlvc/Downloads/app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/home/tuanlvc/.gradle/caches/transforms-2/files-2.1/42687c728b527af415444f9153657b91/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

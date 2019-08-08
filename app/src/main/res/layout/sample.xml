@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/singer128px" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="258dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:scrollHorizontally="true"
+                android:id="@+id/txtsong"
+                android:layout_width="248dp"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="TextView"
+                android:textColor="#fc0362"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="left|top"
+                android:id="@+id/txtsinger"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:background="#FFFFFF"
+                android:src="@drawable/playbtn32px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#a8aaad"
+            android:padding="6dp"
+            android:src="@drawable/singer512px" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="#FFFFFF"
+
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@android:style/Widget.Material.SeekBar.Discrete"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+             />
+        <TextView
+            android:gravity="right"
+            android:text="0:00"
+            android:id="@+id/currentDuration"
+            android:layout_gravity="left"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="left"
+            android:text="0:00"
+            android:id="@+id/totalDuration"
+            android:layout_gravity="right"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:background="#FFFFFF"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnloop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/loop32px" />
+
+        <ImageButton
+
+            android:id="@+id/btnprevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/previous32px" />
+
+        <ImageButton
+            android:id="@+id/btnplay"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/play64px" />
+
+        <ImageButton
+            android:id="@+id/btnnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/next32px" />
+
+        <ImageButton
+            android:id="@+id/btnshuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/shuffle32px" />
+
+    </LinearLayout>
+</LinearLayout>
